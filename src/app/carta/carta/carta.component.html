@@ -1,0 +1,27 @@
+
+<div  class="botones">
+
+    <div *ngFor="let ct of categorias">
+        
+        
+        <button mat-button (click)="cargaCategoria(ct)" >{{ct}}</button>
+        
+        
+    </div>
+    <button mat-button (click)="cargaCategoria('')" >Todas</button>
+</div>
+
+<div class="container ">
+
+    <div *ngFor="let carta of menus" class="row box">
+
+        <mat-card class="col-md-12 card"  >
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image" style="background-image: url('{{carta.fotos[0].foto}}')"></div>
+                    <mat-card-title>{{carta.nombre}} $ {{carta.valor}}</mat-card-title>
+                    <mat-card-subtitle>{{carta.descripcion}}</mat-card-subtitle>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+</div>

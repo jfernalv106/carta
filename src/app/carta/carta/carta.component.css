@@ -1,0 +1,14 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-header-image {
+  background-size: cover;
+}
+.card{
+  margin-top: 10px;
+}
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+}
